@@ -1,1 +1,408 @@
-how are you
+
+nithi@DESKTOP-NJJ6A70 MINGW64 ~
+$ ls
+ AppData/
+'Application Data'@
+ Contacts/
+ Cookies@
+ Documents/
+ Downloads/
+ Favorites/
+ IntelGraphicsProfiles/
+ Links/
+'Local Settings'@
+ Music/
+'My Documents'@
+ NTUSER.DAT
+ NTUSER.DAT{7d812aa6-6139-11ed-aa74-f077c31fe62b}.TxR.0.regtrans-ms
+ NTUSER.DAT{7d812aa6-6139-11ed-aa74-f077c31fe62b}.TxR.1.regtrans-ms
+ NTUSER.DAT{7d812aa6-6139-11ed-aa74-f077c31fe62b}.TxR.2.regtrans-ms
+ NTUSER.DAT{7d812aa6-6139-11ed-aa74-f077c31fe62b}.TxR.blf
+ NTUSER.DAT{7d812aa7-6139-11ed-aa74-f077c31fe62b}.TM.blf
+ NTUSER.DAT{7d812aa7-6139-11ed-aa74-f077c31fe62b}.TMContainer00000000000000000001.regtrans-ms
+ NTUSER.DAT{7d812aa7-6139-11ed-aa74-f077c31fe62b}.TMContainer00000000000000000002.regtrans-ms
+ NetHood@
+ OneDrive/
+ PrintHood@
+ Recent@
+'Saved Games'/
+ Searches/
+ SendTo@
+'Start Menu'@
+ Templates@
+ Videos/
+ ntuser.dat.LOG1
+ ntuser.dat.LOG2
+ ntuser.ini
+
+nithi@DESKTOP-NJJ6A70 MINGW64 ~
+$ ls
+ AppData/
+'Application Data'@
+ Contacts/
+ Cookies@
+ Documents/
+ Downloads/
+ Favorites/
+ IntelGraphicsProfiles/
+ Links/
+'Local Settings'@
+ Music/
+'My Documents'@
+ NTUSER.DAT
+ NTUSER.DAT{7d812aa6-6139-11ed-aa74-f077c31fe62b}.TxR.0.regtrans-ms
+ NTUSER.DAT{7d812aa6-6139-11ed-aa74-f077c31fe62b}.TxR.1.regtrans-ms
+ NTUSER.DAT{7d812aa6-6139-11ed-aa74-f077c31fe62b}.TxR.2.regtrans-ms
+ NTUSER.DAT{7d812aa6-6139-11ed-aa74-f077c31fe62b}.TxR.blf
+ NTUSER.DAT{7d812aa7-6139-11ed-aa74-f077c31fe62b}.TM.blf
+ NTUSER.DAT{7d812aa7-6139-11ed-aa74-f077c31fe62b}.TMContainer00000000000000000001.regtrans-ms
+ NTUSER.DAT{7d812aa7-6139-11ed-aa74-f077c31fe62b}.TMContainer00000000000000000002.regtrans-ms
+ NetHood@
+ OneDrive/
+ PrintHood@
+ Recent@
+'Saved Games'/
+ Searches/
+ SendTo@
+'Start Menu'@
+ Templates@
+ Videos/
+ ntuser.dat.LOG1
+ ntuser.dat.LOG2
+ ntuser.ini
+
+nithi@DESKTOP-NJJ6A70 MINGW64 ~
+$ cd OneDrive
+
+nithi@DESKTOP-NJJ6A70 MINGW64 ~/OneDrive
+$ pwd
+/c/Users/nithi/OneDrive
+
+nithi@DESKTOP-NJJ6A70 MINGW64 ~/OneDrive
+$ cd Desktop
+
+nithi@DESKTOP-NJJ6A70 MINGW64 ~/OneDrive/Desktop
+$ cd abc
+
+nithi@DESKTOP-NJJ6A70 MINGW64 ~/OneDrive/Desktop/abc
+$ git init
+Initialized empty Git repository in C:/Users/nithi/OneDrive/Desktop/abc/.git/
+
+nithi@DESKTOP-NJJ6A70 MINGW64 ~/OneDrive/Desktop/abc (master)
+$ ls a
+ls: cannot access 'a': No such file or directory
+
+nithi@DESKTOP-NJJ6A70 MINGW64 ~/OneDrive/Desktop/abc (master)
+$ ls -a
+./  ../  .git/
+
+nithi@DESKTOP-NJJ6A70 MINGW64 ~/OneDrive/Desktop/abc (master)
+$ tree .git
+bash: tree: command not found
+
+nithi@DESKTOP-NJJ6A70 MINGW64 ~/OneDrive/Desktop/abc (master)
+$ brew install tree
+bash: brew: command not found
+
+nithi@DESKTOP-NJJ6A70 MINGW64 ~/OneDrive/Desktop/abc (master)
+$ touch hello
+
+nithi@DESKTOP-NJJ6A70 MINGW64 ~/OneDrive/Desktop/abc (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        hello
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+nithi@DESKTOP-NJJ6A70 MINGW64 ~/OneDrive/Desktop/abc (master)
+$ git add hello
+
+nithi@DESKTOP-NJJ6A70 MINGW64 ~/OneDrive/Desktop/abc (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   hello
+
+
+nithi@DESKTOP-NJJ6A70 MINGW64 ~/OneDrive/Desktop/abc (master)
+$ git commit -m "initial message"
+[master (root-commit) 82530eb] initial message
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 hello
+
+nithi@DESKTOP-NJJ6A70 MINGW64 ~/OneDrive/Desktop/abc (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+nithi@DESKTOP-NJJ6A70 MINGW64 ~/OneDrive/Desktop/abc (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   hello
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+nithi@DESKTOP-NJJ6A70 MINGW64 ~/OneDrive/Desktop/abc (master)
+$ git add hello
+
+nithi@DESKTOP-NJJ6A70 MINGW64 ~/OneDrive/Desktop/abc (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   hello
+
+
+nithi@DESKTOP-NJJ6A70 MINGW64 ~/OneDrive/Desktop/abc (master)
+$ git commit -m "added a message"
+[master 4df528a] added a message
+ 1 file changed, 1 insertion(+)
+
+nithi@DESKTOP-NJJ6A70 MINGW64 ~/OneDrive/Desktop/abc (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+nithi@DESKTOP-NJJ6A70 MINGW64 ~/OneDrive/Desktop/abc (master)
+$ git log
+commit 4df528a19b3cd4e3e35c0cf733bb6ec25789fa82 (HEAD -> master)
+Author: Nithin Varghese <nithinvarghese2k18@gmail.com>
+Date:   Mon Feb 6 16:12:22 2023 +0530
+
+    added a message
+
+commit 82530eb330e62ec5cca58e3c6994d7e0b99d2610
+Author: Nithin Varghese <nithinvarghese2k18@gmail.com>
+Date:   Mon Feb 6 16:00:02 2023 +0530
+
+    initial message
+
+nithi@DESKTOP-NJJ6A70 MINGW64 ~/OneDrive/Desktop/abc (master)
+$ ^C
+
+nithi@DESKTOP-NJJ6A70 MINGW64 ~/OneDrive/Desktop/abc (master)
+$ git checkout 82530eb330e62ec5cca58e3c6994d7e0b99d2610
+Note: switching to '82530eb330e62ec5cca58e3c6994d7e0b99d2610'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at 82530eb initial message
+
+nithi@DESKTOP-NJJ6A70 MINGW64 ~/OneDrive/Desktop/abc ((82530eb...))
+$ git log --all
+commit 4df528a19b3cd4e3e35c0cf733bb6ec25789fa82 (master)
+Author: Nithin Varghese <nithinvarghese2k18@gmail.com>
+Date:   Mon Feb 6 16:12:22 2023 +0530
+
+    added a message
+
+commit 82530eb330e62ec5cca58e3c6994d7e0b99d2610 (HEAD)
+Author: Nithin Varghese <nithinvarghese2k18@gmail.com>
+Date:   Mon Feb 6 16:00:02 2023 +0530
+
+    initial message
+
+nithi@DESKTOP-NJJ6A70 MINGW64 ~/OneDrive/Desktop/abc ((82530eb...))
+$ git checkout master
+Previous HEAD position was 82530eb initial message
+Switched to branch 'master'
+
+nithi@DESKTOP-NJJ6A70 MINGW64 ~/OneDrive/Desktop/abc (master)
+$ git log --all
+commit 4df528a19b3cd4e3e35c0cf733bb6ec25789fa82 (HEAD -> master)
+Author: Nithin Varghese <nithinvarghese2k18@gmail.com>
+Date:   Mon Feb 6 16:12:22 2023 +0530
+
+    added a message
+
+commit 82530eb330e62ec5cca58e3c6994d7e0b99d2610
+Author: Nithin Varghese <nithinvarghese2k18@gmail.com>
+Date:   Mon Feb 6 16:00:02 2023 +0530
+
+    initial message
+
+nithi@DESKTOP-NJJ6A70 MINGW64 ~/OneDrive/Desktop/abc (master)
+$ touch hey
+
+nithi@DESKTOP-NJJ6A70 MINGW64 ~/OneDrive/Desktop/abc (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        hey
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+nithi@DESKTOP-NJJ6A70 MINGW64 ~/OneDrive/Desktop/abc (master)
+$ git add --all
+
+nithi@DESKTOP-NJJ6A70 MINGW64 ~/OneDrive/Desktop/abc (master)
+$ git commit -m "new file to git"
+[master 131767c] new file to git
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 hey
+
+nithi@DESKTOP-NJJ6A70 MINGW64 ~/OneDrive/Desktop/abc (master)
+$ git log
+commit 131767c6a6af8d61a9968bb55fac8aa7b3334dc9 (HEAD -> master)
+Author: Nithin Varghese <nithinvarghese2k18@gmail.com>
+Date:   Mon Feb 6 17:56:04 2023 +0530
+
+    new file to git
+
+commit 4df528a19b3cd4e3e35c0cf733bb6ec25789fa82
+Author: Nithin Varghese <nithinvarghese2k18@gmail.com>
+Date:   Mon Feb 6 16:12:22 2023 +0530
+
+    added a message
+
+commit 82530eb330e62ec5cca58e3c6994d7e0b99d2610
+Author: Nithin Varghese <nithinvarghese2k18@gmail.com>
+Date:   Mon Feb 6 16:00:02 2023 +0530
+
+    initial message
+
+nithi@DESKTOP-NJJ6A70 MINGW64 ~/OneDrive/Desktop/abc (master)
+$ git checkout 4df528a19b3cd4e3e35c0cf733bb6ec25789fa82
+Note: switching to '4df528a19b3cd4e3e35c0cf733bb6ec25789fa82'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at 4df528a added a message
+
+nithi@DESKTOP-NJJ6A70 MINGW64 ~/OneDrive/Desktop/abc ((4df528a...))
+$ git checkout master
+Previous HEAD position was 4df528a added a message
+Switched to branch 'master'
+
+nithi@DESKTOP-NJJ6A70 MINGW64 ~/OneDrive/Desktop/abc (master)
+$ git log --all
+commit 131767c6a6af8d61a9968bb55fac8aa7b3334dc9 (HEAD -> master)
+Author: Nithin Varghese <nithinvarghese2k18@gmail.com>
+Date:   Mon Feb 6 17:56:04 2023 +0530
+
+    new file to git
+
+commit 4df528a19b3cd4e3e35c0cf733bb6ec25789fa82
+Author: Nithin Varghese <nithinvarghese2k18@gmail.com>
+Date:   Mon Feb 6 16:12:22 2023 +0530
+
+    added a message
+
+commit 82530eb330e62ec5cca58e3c6994d7e0b99d2610
+Author: Nithin Varghese <nithinvarghese2k18@gmail.com>
+Date:   Mon Feb 6 16:00:02 2023 +0530
+
+    initial message
+
+nithi@DESKTOP-NJJ6A70 MINGW64 ~/OneDrive/Desktop/abc (master)
+$ git branch feature
+
+nithi@DESKTOP-NJJ6A70 MINGW64 ~/OneDrive/Desktop/abc (master)
+$ git log
+commit 131767c6a6af8d61a9968bb55fac8aa7b3334dc9 (HEAD -> master, feature)
+Author: Nithin Varghese <nithinvarghese2k18@gmail.com>
+Date:   Mon Feb 6 17:56:04 2023 +0530
+
+    new file to git
+
+commit 4df528a19b3cd4e3e35c0cf733bb6ec25789fa82
+Author: Nithin Varghese <nithinvarghese2k18@gmail.com>
+Date:   Mon Feb 6 16:12:22 2023 +0530
+
+    added a message
+
+commit 82530eb330e62ec5cca58e3c6994d7e0b99d2610
+Author: Nithin Varghese <nithinvarghese2k18@gmail.com>
+Date:   Mon Feb 6 16:00:02 2023 +0530
+
+    initial message
+
+nithi@DESKTOP-NJJ6A70 MINGW64 ~/OneDrive/Desktop/abc (master)
+$ git checkout fature
+error: pathspec 'fature' did not match any file(s) known to git
+
+nithi@DESKTOP-NJJ6A70 MINGW64 ~/OneDrive/Desktop/abc (master)
+$ git checkout feature
+Switched to branch 'feature'
+
+nithi@DESKTOP-NJJ6A70 MINGW64 ~/OneDrive/Desktop/abc (feature)
+$ git status
+On branch feature
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   hey
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+nithi@DESKTOP-NJJ6A70 MINGW64 ~/OneDrive/Desktop/abc (feature)
+$ git add .
+
+nithi@DESKTOP-NJJ6A70 MINGW64 ~/OneDrive/Desktop/abc (feature)
+$ git commit -m "hey edited"
+[feature 06f05f5] hey edited
+ 1 file changed, 1 insertion(+)
+
+nithi@DESKTOP-NJJ6A70 MINGW64 ~/OneDrive/Desktop/abc (feature)
+$ git log
+commit 06f05f57fdf457ec0b9deca1ae55a909ede1d8ea (HEAD -> feature)
+Author: Nithin Varghese <nithinvarghese2k18@gmail.com>
+Date:   Mon Feb 6 18:02:44 2023 +0530
+
+    hey edited
+
+commit 131767c6a6af8d61a9968bb55fac8aa7b3334dc9 (master)
+Author: Nithin Varghese <nithinvarghese2k18@gmail.com>
+Date:   Mon Feb 6 17:56:04 2023 +0530
+
+    new file to git
+
+commit 4df528a19b3cd4e3e35c0cf733bb6ec25789fa82
+Author: Nithin Varghese <nithinvarghese2k18@gmail.com>
+Date:   Mon Feb 6 16:12:22 2023 +0530
+
+    added a message
+
+commit 82530eb330e62ec5cca58e3c6994d7e0b99d2610
+Author: Nithin Varghese <nithinvarghese2k18@gmail.com>
+Date:   Mon Feb 6 16:00:02 2023 +0530
+:
